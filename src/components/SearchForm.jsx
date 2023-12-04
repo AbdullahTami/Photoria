@@ -12,13 +12,13 @@ function SearchForm() {
     setSearchQuery(query);
   }
   return (
-    <div className="mt-20">
+    <div className="mt-20 w-full">
       <h1 className="mb-10 text-5xl font-bold uppercase tracking-wider ">
         Photoria
       </h1>
       <form
         onSubmit={handleSubmit}
-        className="grid w-[600px] grid-cols-[1fr_auto]"
+        className="grid w-full grid-cols-[1fr_auto] px-2 "
       >
         <input
           onChange={(e) => setQuery(e.target.value)}

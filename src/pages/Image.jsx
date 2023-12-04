@@ -32,24 +32,24 @@ function Image() {
   if (isError) return <Error resourceName="the image" />;
 
   return (
-    <div className="mt-10">
+    <div className="mt-3 md:mt-10">
       <span
-        className="mb-5 flex w-fit cursor-pointer items-center gap-2 px-5 text-slate-500 duration-300 hover:text-slate-700 hover:underline"
+        className="mb-3 flex w-fit cursor-pointer items-center gap-2 px-2 text-slate-500 duration-300 hover:text-slate-700 hover:underline md:mb-5 md:px-5"
         onClick={() => navigate(-1)}
       >
         <IoMdArrowBack />
         Go back
       </span>
       <div className="flex flex-col justify-center gap-10">
-        <div className="w-[550px] self-center">
+        <div className="self-center md:w-[550px]">
           <img
-            className="block  h-[510px] w-full object-cover"
+            className="block h-[300px] w-full object-cover px-3 md:h-[510px]"
             src={photo.urls.regular}
             alt={photo.alt_description}
           />
         </div>
         <div className="px-5">
-          <div className="grid grid-cols-3 gap-4">
+          <div className="flex grid-cols-3 flex-col items-center gap-6 md:grid md:gap-4">
             <LeftGrid photo={photo} />
             <div className="flex items-center gap-2 justify-self-center text-slate-500">
               <IoLocationOutline />

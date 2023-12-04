@@ -34,7 +34,7 @@ function Gallery() {
   if (isError) return <Error resourceName="images" />;
 
   return (
-    <div className="grid grid-cols-4 gap-6">
+    <div className="flex flex-col gap-6 px-2 md:grid md:grid-cols-4">
       {images.map((image, i) => (
         <ImageItem key={image.id} image={image} index={i} />
       ))}

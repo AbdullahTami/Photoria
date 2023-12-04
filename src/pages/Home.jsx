@@ -4,7 +4,7 @@ import SearchForm from "../components/SearchForm";
 function Home() {
   return (
     <div className="mx-auto max-w-5xl">
-      <div className="flex flex-col items-center justify-center gap-20 text-center">
+      <div className="flex flex-col items-center justify-center gap-20  text-center">
         <SearchForm />
         <Gallery />
       </div>

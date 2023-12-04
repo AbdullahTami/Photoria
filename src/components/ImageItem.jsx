@@ -19,7 +19,7 @@ function ImageItem({ image, index }) {
       } ${index === 9 && "col-span-4"} `}
     >
       <img
-        className="z-0 block h-80 w-full object-cover 
+        className="z-0  block h-80 w-full object-cover  
         duration-[8s] ease-linear hover:scale-150
         "
         src={image.urls.regular}

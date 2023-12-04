@@ -11,7 +11,7 @@ function ToolTip({ children, tooltip }) {
         const { left } = containerRef.current.getBoundingClientRect();
         tooltipRef.current.style.left = clientX - 100 - left + "px";
       }}
-      className=" group relative inline-block"
+      className="group relative inline-block"
     >
       {children}
       {tooltip && (
