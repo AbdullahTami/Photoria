@@ -11,7 +11,6 @@ function ImageItem({ image, index }) {
   console.log(mouseIn);
   return (
     <div
-      onClick={() => scrollTo(0, 0)}
       onMouseEnter={() => handleMouseHover(true)}
       onMouseLeave={() => handleMouseHover(false)}
       className={`w-50 relative z-0 overflow-hidden ${
@@ -28,6 +27,7 @@ function ImageItem({ image, index }) {
 
       {mouseIn && (
         <Link
+          onClick={() => scrollTo(0, 0)}
           to={`/image/${image.id}`}
           alt={image.alt_description}
           className=" absolute left-[50%] top-[90%] z-[1000px] translate-x-[-50%] translate-y-[-50%]   bg-slate-600 px-6 py-1  text-slate-100 opacity-60 duration-300  hover:opacity-80 "
