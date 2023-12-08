@@ -1,8 +1,8 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PGOTORIA 
 
-Currently, two official plugins are available:
+I built this project using Unsplash API by integrating as well as combining the modern remote state management tool Tanstack Query, previously known as React Query, with Axios library for data fetching in order to provide proficient error management feedback.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I've utilized the Context API for global UI state and picked React Router for the routing then went for TailwindCSS to tailor the app outlook.
+
+It's responsive!
